@@ -1,0 +1,14 @@
+name: Github Action Example
+
+on:
+  pull_request:
+  push:
+    branches:
+      - project-skeleton
+
+jobs:
+  test:
+    name: Running tests
+    runs-on: ubuntu
+
+
