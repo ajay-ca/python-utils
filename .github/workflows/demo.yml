@@ -1,0 +1,14 @@
+name: Demo action file for testing
+
+on: [push]
+
+jobs:
+  build:
+    name: Sample
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Running a script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
