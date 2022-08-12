@@ -9,10 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Running a script
-    - run: |
+      run: |
         echo Learning actions through workflow
-    
-    - uses: actions/checkout@v3
+    #- uses: actions/checkout@v3
     - name: python installation
     - uses: actions/setup-python@v4
       with:
