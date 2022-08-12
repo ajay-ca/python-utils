@@ -11,8 +11,3 @@ jobs:
     - name: Running a script
       run: |
         echo Learning actions through workflow
-    
-    - name: python installation
-      with:
-        python-version: '3.10' 
-    - run: python my_script.py
