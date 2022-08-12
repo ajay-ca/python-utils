@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Running a script
       run: |
-        echo Learning actions through workflow
+        echo Learning actions through workflow.
     
     - uses: actions/checkout@v3
     - name: python installation
