@@ -1,11 +1,13 @@
 # tox enviroments that run on both pull requests and merge to main
 name: ci
 
-#on:
+on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   test:
