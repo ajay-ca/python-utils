@@ -17,5 +17,5 @@ jobs:
       with:
         python-version: '3.10'
     - run: touch script.py
-    - run: echo "print "Hello world"" >> script.py
+    - run: echo "print 'Hello world'" >> script.py
     - run: python script.py
