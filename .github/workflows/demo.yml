@@ -7,12 +7,14 @@ jobs:
     name: Sample
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Running a script
+      uses: actions/checkout@v2
+    - name: Printing a line
       run: |
         echo Learning actions through workflow
     
-    - uses: actions/checkout@v3
+    - name: Python Setup
+      uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.10'
