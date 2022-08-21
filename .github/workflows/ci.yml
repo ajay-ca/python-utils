@@ -57,5 +57,4 @@ jobs:
         files: ./coverage.xml
         fail_ci_if_error: true
         verbose: true
-        version: "v0.1.15"
 #editing for commiting
