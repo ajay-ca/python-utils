@@ -1,0 +1,27 @@
+name: Demo action file for testing
+
+on: [push]
+
+jobs:
+  build:
+    name: Sample
+    runs-on: ubuntu-latest
+    steps:
+    - name: Running a script
+      uses: actions/checkout@v2
+    - name: Printing a line
+      run: |
+        echo Learning actions through workflow
+    
+    - name: Python Setup
+      uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Creating and running script
+      run: |
+        touch script.py
+        echo "print('Hello, world!')" >> script.py
+        python script.py
+      
