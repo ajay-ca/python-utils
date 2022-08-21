@@ -5,9 +5,11 @@ on:
   push:
     branches:
       - main
+      - python-utils
   pull_request:
     branches:
       - main
+      - python-utils
 
 jobs:
   test:
