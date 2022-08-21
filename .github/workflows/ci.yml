@@ -15,7 +15,7 @@ jobs:
       # fail-fast: false
       matrix:
         platform: [ubuntu-latest]
-        python-version: [3.10]
+        python-version: ['3.10']
         # you can separate the tox-envs in different .yml files
         # see version 0.10.1
         # https://github.com/joaomcteixeira/python-project-skeleton/releases/tag/v0.10.1
